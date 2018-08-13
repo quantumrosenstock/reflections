@@ -1,3 +1,17 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-  Initialising a git repository creates a .git file that manages the history of the different versions that would be committed. Initialising a repository is necessary for the same reason. 
+  Initialising a git repository creates a .git file that manages the history of the different versions that would be committed. Initialising a repository is necessary for the same reason.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+  The staging area contains the files that are ready to be committed in the next commit. These files would be added to the git repository from the working directory. It helps consolidate all the files in the particular logical update that is being made to the repository.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+  The staging area collects all the files that have been added after modification, this allows these files that are part of the same logical change to be committed together.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+  -When you are trying to add something new and experimental to already working code and want to be able to run the earlier version simultaneously while also working on the newer one.
+  -While collaborating with others and different people want to work on different aspects of the code
+  

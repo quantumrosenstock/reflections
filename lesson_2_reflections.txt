@@ -14,4 +14,17 @@ What are some situations when branches would be helpful in keeping your history 
 
   -When you are trying to add something new and experimental to already working code and want to be able to run the earlier version simultaneously while also working on the newer one.
   -While collaborating with others and different people want to work on different aspects of the code
-  
+
+How do the diagrams help you visualize the branch structure?
+
+  The diagrams help us understand which commits are accessible from which branch and therefore help us understand the history of different branches and commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+  The result of merging two branches together is that the branch that is currently checked-out will remain and the other one will be removed, but all the commits from both branches will be preserved. These commits will be arranged according to their timestamp.
+  It is represented in the diagram with a node that connects to both the previous branches because it can reach all the commits of those two branches and becomes a single branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+  Pros - Automatic merging is clearly easier and would be better if the code is too long or hard to read through and merge manually.
+  Cons - Merging may often do something that is incorrect or not required: it might not realise that two versions may be the same thing or nearly the same with one parameter changed. The sequence of different parts of code in different versions might get messed up.
